@@ -1,0 +1,29 @@
+.loader {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+.banner {
+    height: calc(100% / 5);
+    /* border-bottom: 1px solid black; */
+    width: 90%;
+    box-shadow: -15px 0px 50px grey;
+    position: absolute;
+    top: calc(100% / 5 * var(--i));
+    left: 0;
+}
+
+.banner img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.banner:nth-child(even){
+    position: absolute;
+    left: unset;
+    right: 0;
+}

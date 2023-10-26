@@ -1,0 +1,179 @@
+.eventWrapper {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.eventHeading {
+  margin-bottom: 40px;
+  font-size: 50px;
+  position: relative;
+  z-index: 2;
+}
+.eventContainer {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  width: 1400px;
+  height: 60%;
+  transition: 250ms;
+}
+.eventContainer .box {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  transition: 250ms;
+  position: relative;
+}
+/* .eventContainer .box:hover {
+  filter: grayscale(0);
+} */
+.bannerImg{
+    position: absolute;
+    width: 0%;
+    z-index: 10;
+    top: -50px;
+}
+.decImage1{
+    height: 200px;
+    position: absolute;
+    left: -3%;
+    rotate: -30deg;
+    top: 0;
+}
+.decImage2{
+    height: 300px;
+    position: absolute;
+    right: -50px;
+    rotate: 10deg;
+    top: 20px;
+    z-index: 11;
+}
+.decImage3{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 200px;
+    width: 200px;
+    rotate: 20deg;
+}
+.decImage3 img{
+    height: 100%;
+    width: 100%;
+}
+.decImage1 img{
+    height: 100%;
+}
+.decImage2 img{
+    height: 100%;
+}
+.eventContainer .box .eventImg {
+  height: 100%;
+  max-height: 60vh;
+  width: 100%;
+  position: relative;
+  object-fit: cover;
+  object-position: center;
+  filter: grayscale(1);
+}
+.eventContainer .box:hover .eventImg{
+    filter: grayscale(0);
+}
+.eventContainer:has(.one:hover) {
+  grid-template-columns: 2fr 0.5fr 0.5fr 0.5fr 0.5fr;
+}
+.eventContainer:has(.two:hover) {
+  grid-template-columns: 0.5fr 2fr 0.5fr 0.5fr 0.5fr;
+}
+.eventContainer:has(.three:hover) {
+  grid-template-columns: 0.5fr 0.5fr 2fr 0.5fr 0.5fr;
+}
+.eventContainer:has(.four:hover) {
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 2fr 0.5fr;
+}
+.eventContainer:has(.five:hover) {
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 2fr;
+}
+.eventContainer .box .one {
+  background-color: slateblue;
+  transition: 250ms;
+}
+.eventContainer .box .two {
+  background-color: blueviolet;
+  transition: 250ms;
+}
+.eventContainer .box .three {
+  background-color: tomato;
+  transition: 250ms;
+}
+.eventContainer .box .four {
+  background-color: burlywood;
+  transition: 250ms;
+}
+.eventContainer .box .five {
+  background-color: cadetblue;
+  transition: 250ms;
+}
+.eventContainer .box::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background: linear-gradient(#00000092, transparent, #0000009d);
+}
+.eventContainer .box button {
+  position: absolute;
+  bottom: 7%;
+  left: 50%;
+  z-index: 10;
+  padding: 0.5vw 1.75vw;
+  border: 1px solid white;
+  outline: none;
+  font-size: 18px;
+  background: transparent;
+  color: white;
+  transform: translate(-50%) skewX(0deg) skewY(0deg);
+  transition: 250ms;
+  opacity: 0;
+  visibility: hidden;
+}
+.eventContainer .box:hover button {
+  opacity: 1;
+  visibility: visible;
+}
+.eventContainer .box button:hover {
+  background-color: white;
+  color: black;
+  transform: translate(-50%) skewX(-10deg) skewY(0deg);
+}
+
+.eventContainer .box .info h2 {
+  color: white;
+  text-align: center;
+  /* z-index: 10; */
+}
+.eventContainer .box .info span {
+  color: black;
+  padding: 1px 4px;
+  background-color: white;
+  font-weight: 600;
+}
+.eventContainer .box .info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 10;
+}
