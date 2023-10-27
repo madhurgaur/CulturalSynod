@@ -4,9 +4,9 @@ const Header = () => {
     return (
         <header>
             <ul>
-                <li><a href="/#CulturalSynod/">Home</a></li>
-                <li><a href='/#CulturalSynod/about'>About</a></li>
-                <li><a href='/#CulturalSynod/events'>Event</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href='/#about'>About</a></li>
+                <li><a href='/#events'>Event</a></li>
             </ul>
         </header>
     )

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import ClubLoader from "./Clubs-Loader/ClubLoader";
 import HeroSection from "./HeroSection/HeroSection";
 import Events from "./Events/Events";
-import {  createHashRouter, RouterProvider } from 'react-router-dom';
+import {  HashRouter,createHashRouter, RouterProvider, Routes, Route } from 'react-router-dom';
 import gsap from "gsap";
 import About from "./About/About";
 import Header from "./Header/Header";
@@ -89,7 +89,13 @@ const App = () => {
   return (
     <>
       <div id="customCursor" className="customCursor"></div>
-      <RouterProvider router={router} />
+      <HashRouter>
+        <Routes>
+          <Route exact path='/' element={<Home/>}/>
+          <Route exact path='/events' element={<Events/>}/>
+          <Route exact path='/about' element={<About/>}/>
+        </Routes>
+      </HashRouter>
 
     </>
   );
