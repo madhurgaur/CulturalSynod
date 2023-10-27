@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
 import "./Events.css";
+import Header from "../Header/Header";
 const Events = () => {
   return (
     <div className="eventWrapper">
+      <Header/>
       <div data-scroll data-scroll-speed="-0.1" className="decImage1">
         <img src="bunting.png" alt="bunting" />
       </div>

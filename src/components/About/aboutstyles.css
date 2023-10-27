@@ -1,0 +1,168 @@
+.aboutSection {
+    width: 100vw;
+    height: max-content;
+    min-height: 100vh;
+    position: relative;
+    background-color: rgb(210, 210, 210);
+}
+
+.aboutHero {
+    /* height: 100vh; */
+    position: absolute;
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: rgb(236, 127, 108); */
+    background-color: white;
+}
+
+.aboutHero h1 {
+    font-size: 150px;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    animation: flicker 1s linear forwards;
+}
+
+@keyframes flicker {
+    0% {
+        color: blue;
+    }
+
+    10% {
+        color: black;
+    }
+
+    20% {
+        color: greenyellow;
+    }
+
+    30% {
+        color: tomato;
+    }
+
+    40% {
+        color: violet;
+    }
+
+    50% {
+        color: aquamarine;
+    }
+
+    60% {
+        color: violet;
+    }
+
+    70% {
+        color: brown;
+    }
+
+    80% {
+        color: burlywood;
+    }
+
+    100% {
+        color: black;
+    }
+}
+
+.aboutHero img {
+    height: 100px;
+    width: 100px;
+}
+
+.aboutUs {
+    height: max-content;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 100px;
+    padding-top: 100px;
+}
+
+.text h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.text p {
+    width: 80%;
+    font-size: 22px;
+}
+
+.ourteam {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.ourteam h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.teamCardsContainer {
+    width: 100%;
+    /* margin: auto; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.teamCard {
+    margin: 0 40px 40px 0;
+    width: 400px;
+    height: 400px;
+    background-color: burlywood;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.teamCard:nth-child(n) {
+    background-color: #ff8080;
+}
+
+.teamCard:nth-child(2n) {
+    background-color: cadetblue;
+}
+
+.teamCard:nth-child(3n) {
+    background-color: #b15eff;
+}
+
+.teamCard:nth-child(4n) {
+    background-color: burlywood;
+}
+
+.teamCard span {
+    margin: 10px;
+    max-height: 200px;
+    overflow-y: hidden;
+}
+
+.teamCardInner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teamCardInner img {
+    background-color: black;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.teamCardInner h2 {
+    text-align: center;
+}

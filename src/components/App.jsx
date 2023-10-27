@@ -2,7 +2,11 @@ import React, { useEffect } from "react";
 import ClubLoader from "./Clubs-Loader/ClubLoader";
 import HeroSection from "./HeroSection/HeroSection";
 import Events from "./Events/Events";
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import gsap from "gsap";
+import About from "./About/About";
+import Header from "./Header/Header";
+import Home from "./Home/Home";
 const App = () => {
   useEffect(function () {
     async function runloco() {
@@ -68,13 +72,26 @@ const App = () => {
       });
     });
   });
+  const router = createBrowserRouter([
+
+    {
+      path: '/CulturalSynod',
+      element:<Home/>,
+
+    }, {
+      path: '/CulturalSynod/about',
+      element: <About />,
+    }, {
+      path: '/CulturalSynod/events',
+      element: <Events />,
+    }
+  ])
   return (
-    <div>
+    <>
       <div id="customCursor" className="customCursor"></div>
-      {/* <ClubLoader /> */}
-      <HeroSection />
-      <Events />
-    </div>
+      <RouterProvider router={router} />
+
+    </>
   );
 };
 
