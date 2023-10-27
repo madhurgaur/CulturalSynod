@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import ClubLoader from "./Clubs-Loader/ClubLoader";
 import HeroSection from "./HeroSection/HeroSection";
 import Events from "./Events/Events";
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import {  createHashRouter, RouterProvider } from 'react-router-dom';
 import gsap from "gsap";
 import About from "./About/About";
 import Header from "./Header/Header";
@@ -72,7 +72,7 @@ const App = () => {
       });
     });
   });
-  const router = createBrowserRouter([
+  const router = createHashRouter([
 
     {
       path: '/CulturalSynod',
