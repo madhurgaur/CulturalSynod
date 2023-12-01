@@ -7,6 +7,7 @@ import gsap from "gsap";
 import About from "./About/About";
 import Header from "./Header/Header";
 import Home from "./Home/Home";
+import Gallery from "./Gallery/Gallery";
 const App = () => {
   useEffect(function () {
     async function runloco() {
@@ -72,20 +73,23 @@ const App = () => {
       });
     });
   });
-  const router = createHashRouter([
+  // const router = createHashRouter([
 
-    {
-      path: '/CulturalSynod',
-      element:<Home/>,
+  //   {
+  //     path: '/CulturalSynod',
+  //     element:<Home/>,
 
-    }, {
-      path: '/CulturalSynod/about',
-      element: <About />,
-    }, {
-      path: '/CulturalSynod/events',
-      element: <Events />,
-    }
-  ])
+  //   }, {
+  //     path: '/CulturalSynod/about',
+  //     element: <About />,
+  //   }, {
+  //     path: '/CulturalSynod/events',
+  //     element: <Events />,
+  //   },{
+  //     path: '/CulturalSynod/gallery',
+  //     element: <Gallery />,
+  //   }
+  // ])
   return (
     <>
       <div id="customCursor" className="customCursor"></div>
@@ -94,6 +98,8 @@ const App = () => {
           <Route exact path='/' element={<Home/>}/>
           <Route exact path='/events' element={<Events/>}/>
           <Route exact path='/about' element={<About/>}/>
+          <Route exact path='/gallery' element={<Gallery/>}/>
+          
         </Routes>
       </HashRouter>
 

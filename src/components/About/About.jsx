@@ -41,7 +41,7 @@ const About = () => {
                     rem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit culpa, blanditiis architecto delectus iure consectetur molestias, corporis nesciunt debitis minima sit consequatur consequuntur. Tempora tenetur, voluptatem molestiae architecto enim quas facere voluptatum qui quis quos quisquam magni iure nulla, commodi nisi incidunt accusamus praesentium sint magnam. Optio alias sint quaerat saepe vitae necessitatibus nostrum itaque quos, aliquid molestias accusamus nihil! Soluta voluptas sit temporibus enim esse numquam dolores minima ipsa optio est? Rem, veritatis error, dolor placeat cumque deserunt blanditiis nesciunt dolores, impedit tempore architecto? Totam incidunt expedita aperiam quisquam maiores rem facere unde iure impedit eaque quis, molestias et! dolor sit, amet consectetur adipisicing elit. Repellat explicabo molestiae libero, aut suscipit magni repudiandae vel eveniet! Eum cum, facere dolorum non reprehenderit optio tenetur porro sequi molestias sint!</p>
             </div>
             <div className="ourteam">
-                <h1>Out Team</h1>
+                <h1>Our Team</h1>
                 <div className="teamCardsContainer">
                     <div className="teamCard">
                         <div className="teamCardInner">

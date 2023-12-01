@@ -7,6 +7,7 @@ const Header = () => {
                 <li><a href="/CulturalSynod">Home</a></li>
                 <li><a href='/CulturalSynod/#about'>About</a></li>
                 <li><a href='/CulturalSynod/#events'>Event</a></li>
+                <li><a href='/CulturalSynod/#gallery'>Gallery</a></li>
             </ul>
         </header>
     )
